@@ -17,7 +17,6 @@ var currentState = '';
 var timeTableEl = '';
 
 currentDay.text(now);
-console.log(currentHour);
 
 function colorHours (){
   if (currentHour > "") {
@@ -87,7 +86,6 @@ saveBtn.on("click", function(){
   //then after that, the new object will be pushed to the array and save (setItem) to local storage.
   for (let i = 0; i < retrievedList.length; i++){
     let currentKey = eventLists.key;
-    console.log(retrievedList)
     if (currentKey === retrievedList[i].key){
       retrievedList.splice(i,1);
     }
