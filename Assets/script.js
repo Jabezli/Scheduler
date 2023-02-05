@@ -99,7 +99,6 @@ saveBtn.on("click", function(){
 function getList (){
   let listArray = JSON.parse(localStorage.getItem("eventLists")) || [];
   return listArray;
-  
 }
 
 renderList();
